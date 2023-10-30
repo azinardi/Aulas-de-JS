@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função em bloco</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+
+        #area{
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            padding-top: 25px;
+            border-radius: 10px;
+        }
+
+        #area:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()">
+        Interaja!
+    </div>
+
+    <script>
+        var clicou = false;
+
+        function clicar(){
+            var a = window.document.getElementById('area');
+
+            if (clicou) {
+            a.innerText = 'Interaja!';
+            a.style.background = 'blue';}
+            else {
+                a.innerText = 'Clicou!';
+            a.style.background = 'red';
+        }
+
+        clicou = !clicou;
+    }
+    </script>
+</body>
+</html>

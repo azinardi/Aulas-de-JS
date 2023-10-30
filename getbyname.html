@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Aula sobre getElementsByName</title>
+</head>
+<body>
+
+    <div name="mensagem">Bom dia!</div>
+
+
+    <script>
+        var p1 = window.document.getElementsByName('mensagem')[0];
+        window.document.write(p1.innerText = 'Boa aula!');
+
+        p1.style.background = 'red';
+
+    </script>
+
+<div class="botão">
+    <button onclick="clicou()">Clique em mim!!</button>
+</div>
+
+    <script>
+           function clicou() {
+            window.alert("você clicou no botão!")
+        }
+    </script>
+</body>
+</html>
